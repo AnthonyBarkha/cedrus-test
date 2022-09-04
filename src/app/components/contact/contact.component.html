@@ -1,0 +1,35 @@
+<div class="contact-container" id="contact-us">
+    <div class="title">
+        .02 CONTACT US
+    </div>
+    <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+        <div class="infos-1">
+            <div class="name-container">
+                <div class="label">
+                    *Full Name
+                </div>
+                <input type="text" placeholder="John Doe" class="input-field" formControlName="fullName">
+            </div>
+            <div class="email-container">
+                <div class="label">
+                    *Email
+                </div>
+                <input type="email" placeholder="johndoe@email.com" class="input-field" 
+                formControlName="email">
+            </div>
+        </div>
+        <div class="infos-2">
+            <div class="message-container">
+                <div class="label">
+                    *Message
+                </div>
+                <textarea class="input-field" rows="4" style="resize: none;"
+                placeholder="Drop us a line with questions or to learn more about joining our team!"
+                formControlName="message"></textarea>
+            </div>
+        </div>
+    
+        <button type="submit" [disabled]="!contactForm.valid" class="submit-btn">Submit</button>
+    </form>
+    
+</div>

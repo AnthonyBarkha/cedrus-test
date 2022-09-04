@@ -1,0 +1,11 @@
+<nav class="navbar">
+    <img src="../../../assets/images/cedrus.png"/>
+    <ul class="nav-links">
+        <li class="nav-link">
+            <a (click)="goToAbout()" [ngClass]="about ? 'with-border' : 'wthout-border'">ABOUT</a>
+        </li>
+        <li class="nav-link">
+            <a (click)="goToContact()" [ngClass]="contact ? 'with-border' : 'wthout-border'">CONTACT</a>
+        </li>
+    </ul>
+  </nav>

@@ -1,0 +1,11 @@
+<div class="specialities-container" id="specialities">
+    <div class="title">
+        .01 WHAT MAKES US SPECIAL
+    </div>
+    <div class="grid-container">
+        <div class="row">
+            <app-speciality-item *ngFor="let speciality of specialities" 
+            [speciality]="speciality" class="col-md-3 col-sm-6"></app-speciality-item>
+        </div>
+    </div>
+</div>

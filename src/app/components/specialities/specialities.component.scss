@@ -1,0 +1,25 @@
+.specialities-container {
+    margin: 0;
+    width: 100%;
+    padding: 5em;
+    background: #F3F6FA;
+    scroll-margin-top: 50px;
+    border-bottom: 1px solid #C4C4C4;
+
+    @media (max-width: 1200px){
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+
+    .title {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 600;
+        color: #262262;
+        font-size: 1.5em;
+    }
+
+    .grid-container {
+        margin-top: 3em;
+    }
+}

@@ -1,0 +1,98 @@
+.contact-container {
+    background: #FFFFFF;
+    margin: 0;
+    width: 100%;
+    padding: 5em 5em 0 5em;
+    scroll-margin-top: 50px;
+    border-bottom: 1px solid #C4C4C4;
+
+    @media (max-width: 1200px){
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+
+
+    .title {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 600;
+        color: #262262;
+        font-size: 1.5em;
+        width: 100%;
+    }
+
+    .infos-1 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        margin-top: 3em;
+        flex-wrap: wrap;
+        width: 90%;
+
+        .name-container {
+            margin-top: 1em;
+            flex-basis: 35%;
+
+            @media (max-width: 768px) {
+              width: 90%;
+            }
+  
+        }
+
+        .email-container {
+            margin-top: 1em;
+            flex-basis: 35%;
+            
+            @media (max-width: 768px) {
+                width: 90%;
+            }
+ 
+        }
+
+        @media (max-width: 768px) {
+            flex-direction: column;
+            align-content: flex-start;
+        }
+    }
+
+    .infos-2 {
+        margin-top: 3em;
+        width: 90%;
+
+        .message-container {
+            @media (max-width: 768px) {
+                width: 90%;
+            }
+        }
+    }
+
+    .label {
+        font-family: 'Roboto';
+        font-style: normal;
+        color: #F05432;
+    }
+
+    .input-field {
+        margin-top: 2em;
+        border: none;
+        outline: none;
+        padding-bottom: 1em;
+        border-bottom: 2px solid #C4C4C4;
+        width: 100%;    
+    }
+
+    .submit-btn {
+        background: #F05432;
+        box-shadow: 0px 4px 12px rgba(38, 34, 98, 0.42);
+        border-radius: 30px;
+        color: #FFFFFF;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 600;
+        text-align: center;
+        padding: .5em 5em;
+        margin-top: 2.5em;
+        margin-bottom: 5em;
+    }
+}
